@@ -6,7 +6,7 @@ import org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest
 import org.springframework.test.web.reactive.server.WebTestClient
 import java.net.URI
 
-@WebFluxTest(HealthCheckContoller::class)
+@WebFluxTest(HealthCheckController::class)
 class HealthCheckControllerTest(
     @Autowired private val webTestClient: WebTestClient
 ) {
