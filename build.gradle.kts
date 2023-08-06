@@ -24,8 +24,16 @@ dependencies {
     implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
+    implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
+    implementation("org.flywaydb:flyway-core")
+
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("io.projectreactor:reactor-test")
+    testImplementation("io.mockk:mockk:1.13.5")
+    testImplementation("com.ninja-squad:springmockk:4.0.2")
+
+    runtimeOnly("io.r2dbc:r2dbc-h2")
+    runtimeOnly("com.h2database:h2")
 }
 
 tasks.withType<KotlinCompile> {

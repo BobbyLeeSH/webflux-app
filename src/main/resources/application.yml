@@ -1,0 +1,12 @@
+spring:
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    url: jdbc:h2:mem:local;DB_CLOSE_DELAY=-1
+  r2dbc:
+    url: r2dbc:h2:mem:///local
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
